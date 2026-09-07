@@ -1,0 +1,29 @@
+{
+  "name": "cli_terminal-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hartej46/RevenuePulse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hartej46/RevenuePulse/issues"
+  },
+  "homepage": "https://github.com/hartej46/RevenuePulse#readme",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "chalk": "^6.0.0",
+    "commander": "^15.0.0",
+    "ink": "^7.1.1",
+    "ink-select-input": "^6.2.0",
+    "react": "^19.2.8"
+  }
+}
