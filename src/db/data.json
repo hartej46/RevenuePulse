@@ -1,0 +1,176 @@
+{
+    "candidate": {
+        "id": "cand_001",
+        "name": "Alex Mercer",
+        "targetRoleId": "role_be_01",
+        "experienceLevel": "Entry-Level",
+        "badges": [
+            {
+                "badgeId": "badge_node_adv",
+                "title": "Node.js Core Practitioner",
+                "earnedAt": "2026-03-15T10:30:00.000Z"
+            }
+        ]
+    },
+    "roles": [
+        {
+            "roleId": "role_be_01",
+            "title": "Junior Backend Engineer",
+            "department": "Engineering",
+            "avgSalary": "₹6,50,000 - ₹9,00,000",
+            "demandLevel": "High",
+            "requiredSkills": {
+                "node": 70,
+                "database": 65,
+                "api_design": 60,
+                "docker": 40
+            }
+        },
+        {
+            "roleId": "role_fs_01",
+            "title": "Full Stack Developer",
+            "department": "Engineering",
+            "avgSalary": "₹7,00,000 - ₹11,00,000",
+            "demandLevel": "Very High",
+            "requiredSkills": {
+                "node": 60,
+                "database": 50,
+                "frontend": 75,
+                "api_design": 60
+            }
+        },
+        {
+            "roleId": "role_de_01",
+            "title": "Associate DevOps Engineer",
+            "department": "Infrastructure",
+            "avgSalary": "₹8,00,000 - ₹12,00,000",
+            "demandLevel": "Moderate",
+            "requiredSkills": {
+                "docker": 80,
+                "database": 50,
+                "ci_cd": 70,
+                "node": 40
+            }
+        }
+    ],
+    "questions": [
+        {
+            "id": "q_node_01",
+            "domain": "node",
+            "difficulty": "medium",
+            "prompt": "What happens if an unhandled promise rejection occurs in a modern Node.js runtime?",
+            "options": [
+                "It is silently ignored",
+                "The process emits a warning and exits with code 1",
+                "The event loop restarts the failed task",
+                "It delegates directly to the thread pool"
+            ],
+            "correctIndex": 1,
+            "skillWeight": 25
+        },
+        {
+            "id": "q_db_01",
+            "domain": "database",
+            "difficulty": "easy",
+            "prompt": "Which operation provides an atomic read-and-update pattern to prevent race conditions?",
+            "options": [
+                "Sequential SELECT followed by UPDATE",
+                "Optimistic locking using a version field",
+                "Reading data into a local JSON cache",
+                "Disabling database constraints"
+            ],
+            "correctIndex": 1,
+            "skillWeight": 20
+        },
+        {
+            "id": "q_api_01",
+            "domain": "api_design",
+            "difficulty": "medium",
+            "prompt": "Which HTTP method is required by spec to be strictly idempotent?",
+            "options": [
+                "POST",
+                "PATCH",
+                "PUT",
+                "CONNECT"
+            ],
+            "correctIndex": 2,
+            "skillWeight": 20
+        },
+        {
+            "id": "q_dock_01",
+            "domain": "docker",
+            "difficulty": "easy",
+            "prompt": "What is the primary benefit of multi-stage builds in a Dockerfile?",
+            "options": [
+                "Decreasing container runtime RAM usage",
+                "Reducing the final image size by discarding build tools",
+                "Allowing multiple base operating systems simultaneously",
+                "Bypassing container network firewalls"
+            ],
+            "correctIndex": 1,
+            "skillWeight": 20
+        }
+    ],
+    "courses": [
+        {
+            "courseId": "crs_node_deep",
+            "title": "Mastering the Node.js Event Loop & Streams",
+            "targetSkill": "node",
+            "type": "micro-course",
+            "duration": "4 hours",
+            "provider": "PSDM Academy"
+        },
+        {
+            "courseId": "crs_sql_perf",
+            "title": "PostgreSQL Indexing & Concurrency Control",
+            "targetSkill": "database",
+            "type": "hands-on project",
+            "duration": "6 hours",
+            "provider": "Skill Bridge Punjab"
+        },
+        {
+            "courseId": "crs_docker_fund",
+            "title": "Containerization Essentials & Docker Security",
+            "targetSkill": "docker",
+            "type": "workshop",
+            "duration": "3 hours",
+            "provider": "Cloud Ready Tech"
+        },
+        {
+            "courseId": "crs_rest_api",
+            "title": "Production API Architecture & Idempotency",
+            "targetSkill": "api_design",
+            "type": "micro-course",
+            "duration": "2.5 hours",
+            "provider": "PSDM Academy"
+        }
+    ],
+    "assessmentResults": [
+        {
+            "attemptId": "att_001",
+            "completedAt": "2026-04-01T15:00:00.000Z",
+            "scores": {
+                "node": 75,
+                "database": 40,
+                "api_design": 60,
+                "docker": 20
+            },
+            "identifiedGaps": [
+                {
+                    "skill": "database",
+                    "currentScore": 40,
+                    "requiredScore": 65,
+                    "delta": 25,
+                    "recommendedCourseId": "crs_sql_perf"
+                },
+                {
+                    "skill": "docker",
+                    "currentScore": 20,
+                    "requiredScore": 40,
+                    "delta": 20,
+                    "recommendedCourseId": "crs_docker_fund"
+                }
+            ]
+        }
+    ]
+}
