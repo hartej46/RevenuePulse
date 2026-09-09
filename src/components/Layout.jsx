@@ -1,3 +1,4 @@
+import React from "react";
 import { SCREENS } from "../utils/Constants";
 import { Box, Text, useInput } from "ink";
 
