@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx src/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,8 @@
     "ink": "^7.1.1",
     "ink-select-input": "^6.2.0",
     "react": "^19.2.8"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.13"
   }
 }
