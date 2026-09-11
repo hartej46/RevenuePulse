@@ -1,8 +1,7 @@
-import { error } from "node:console";
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const DATA_FILE = path.join(import.meta.dirname, "./storage/data.json");
+const DATA_FILE = path.join(import.meta.dirname, "../db/data.json");
 
 export async function loadData() {
     try {
@@ -13,3 +12,10 @@ export async function loadData() {
     }
 }
 
+export async function saveData(data) {
+    const tempFile = `${DATA_FILE}.tmp`;
+    const serialized = JSON.stringify(data, null, 2);
+    
+    await fs.writeFile(tempFile, serialized, "utf-8");
+    await fs.rename(tempFile, DATA_FILE);
+}
